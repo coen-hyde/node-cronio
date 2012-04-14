@@ -1,0 +1,17 @@
+{
+  "name": "cron.io",
+  "description": "Library and command line app to communicate with cron.io",
+  "scripts": {
+    "test": "make test"
+  },
+  "version": "0.1.0",
+  "engine": "node 0.6.5",
+  "dependencies": {
+    "winston": "0.5.9",
+    "async": "0.1.16"
+  }, "devDependencies": {
+    "mocha": "0.12.x",
+    "request": "2.9.x",
+    "should": "0.5.x"
+  }
+}

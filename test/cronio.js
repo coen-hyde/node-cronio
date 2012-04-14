@@ -1,22 +1,14 @@
-var vows = require('vows'),
-    assert = require('assert'),
-    util = require('util');
+var should = require('should'),
+    util = require('util'),
+    cronio = require('../lib');
 
-vows.describe("Cron.io API").addBatch({
-  'Create user': {
-    topic: function () {
 
-    },
-    'returns a user': function () {
+describe("Cron.io API", function() {
+  describe('Create user', function() {
+    it('should error when POSTed an empty hash', function() {
+      cronio.users.create({}, function(err, res) {
 
-    },
-    'Create a cron': {
-      topic: function () {
-
-      },
-      'returns a cron': {
-
-      }
-    }
-  }
-}).run();
+      });
+    });
+  });
+});
